@@ -1,0 +1,28 @@
+{
+  "name": "reportbot",
+  "version": "1.0.0",
+  "description": "Allows discord users to report messages to a moderator channel with a context menu option.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "node ./deploy_commands.js",
+    "destroy": "node ./destroy_commands.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jykinturah/reportbot.git"
+  },
+  "author": "Jykinturah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jykinturah/reportbot/issues"
+  },
+  "homepage": "https://github.com/jykinturah/reportbot#readme",
+  "dependencies": {
+    "discord.js": "^14.6.0"
+  },
+  "engines": {
+    "npm": ">=8.0.0 <9.0.0",
+    "node": ">=16.0.0 <17.0.0"
+  }
+}
