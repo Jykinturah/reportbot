@@ -11,6 +11,20 @@ Discord bot that allows Discord users to report messages using a context menu co
 - `npm install`
 - `cp config.json.sample config.json`
 - Edit the `config.json` file with your credentials and other information.
+- `node deploy_commands.js` 
+- `node index.js`
+- The bot is now running.
+
+## Using PM2
+
+- PM2 can be used to run the process in the background.
+- `npm install pm2@latest -g`
+- `pm2 startup`
+- Follow the onscreen instructions to enable pm2 autostart on reboot.
+- `pm2 start index.js --name reportbot`
+- `pm2 save`
+- `pm2 status`
+- reportbot should be running now.
 
 ## How it works
 
