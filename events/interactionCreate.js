@@ -1,4 +1,4 @@
-const { EmbedBuilder } = require('discord.js');
+const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 const config = require('../config.json');
 
 function wait(ms) {
@@ -18,9 +18,10 @@ module.exports = {
         const reportEmbed = new EmbedBuilder()
           .setColor(config.embedColor)
           .setTitle('User Report')
-          .addFields(reportEmbedFields)
-          .addFields({name: 'Acknowledged By', value: `${interaction.user.tag}`, inline: true});
-        await interaction.message.edit({ content: '', embeds:[reportEmbed]});
+          .addFields(reportEmbedFields);
+        const ackRow = new ActionRowBuilder()
+          .addComponents(new ButtonBuilder().setCustomId('ack').setLabel(`Acknowledged By ${interaction.user.tag}`).setStyle(ButtonStyle.Primary).setDisabled(true))
+        await interaction.message.edit({ content: '', embeds:[reportEmbed], components: [ackRow] });
         await interaction.reply({content: 'Acknowledged!'});
         await wait(3000);
         await interaction.deleteReply();
