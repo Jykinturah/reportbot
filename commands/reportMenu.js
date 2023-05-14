@@ -3,7 +3,7 @@ const config = require('../config.json');
 
 module.exports = {
 	data: new ContextMenuCommandBuilder()
-		.setName('report')
+		.setName('Report to Mods')
     .setType(ApplicationCommandType.Message)
     .setDMPermission(false),
 	async execute(interaction) {
