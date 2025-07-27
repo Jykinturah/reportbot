@@ -1,11 +1,11 @@
 {
-  "discordBotClientToken": "[Discord Bot Token]",
-  "discordBotClientID": "[Discord Bot ID]",
+      "discordBotClientToken": "[Discord Bot Token]",
+      "discordBotClientID": "[Discord Bot ID]",
 
-  "discordGuildID": "[Guild ID]",
+      "discordGuildID": "[Guild ID]",
 
-  "embedColor": "#7289DA",
+      "embedColor": "#7289DA",
 
-  "reportChannelID": "[Report Logs Channel ID]",
-  "reportMessage": "Thank you for your report! Our mod team will get to it as soon as possible."
+      "reportChannelID": "[Report Logs Channel ID]",
+      "reportMessage": "Thank you for your report! Our mod team will get to it as soon as possible."
 }
